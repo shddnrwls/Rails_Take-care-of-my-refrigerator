@@ -1,0 +1,30 @@
+
+    <section id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="section-title text-center wow fadeInUp">
+                        <h2>FOOD</h2>    
+                        <h1 style="color: orange">레시피를 부탁해</h1>
+                    </div>
+                    <div class="about-us text-center wow fadeInDown" style="color: black">
+                         <%@result.css('div.view_step div').each do |result|%>
+                            <h3><%=@result.css('div#stepdescr1').text%></h3>
+                            <h3><%=@result.css('div#stepdescr2').text%></h3>
+                            <h3><%=@result.css('div#stepdescr3').text%></h3>
+                            <h3><%=@result.css('div#stepdescr4').text%></h3>
+                            <h3><%=@result.css('div#stepdescr5').text%></h3>
+                            <h3><%=@result.css('div#stepdescr6').text%></h3>
+                            <h3><%=@result.css('div#stepdescr7').text%></h3>
+                            <h3><%=@result.css('div#stepdescr8').text%></h3>
+                            <h3><%=@result.css('div#stepdescr9').text%></h3>
+                            <h3><%=@result.css('div#stepdescr10').text%></h3>
+                            <%break%>
+                         <%end%>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        End #about
+        ========================== -->
